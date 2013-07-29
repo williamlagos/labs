@@ -1,0 +1,194 @@
+!!! transitional
+html(xmlns='http://www.w3.org/1999/xhtml')
+  head
+    link(rel='shortcut icon',href='img/Fabrica_Site_r1_c1.gif')
+    title Fábrica de Ideias Coworking
+    //if IE
+      style(type='text/css', media='all')
+              .borderitem {border-style: solid;}
+    script(type="text/javascript")
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39033371-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+            .navbar-inner
+                    .container
+                            .brand(style='padding:0px; margin:0px;')
+                                    img(src='img/fabrica.png',style='height:40px;')
+                            a.btn.btn-navbar(data-toggle='collapse',data-target='.nav-collapse')
+                                span.icon-bar
+                                span.icon-bar
+                                span.icon-bar
+                            .nav-collapse.collapse
+                                    ul.nav
+                                            li#coworking(style='background-color:#D90000; text-align:center;')
+                                                    a(href='#',style='padding:0px')
+                                                            img(src='img/Fabrica_Site_r1_c4.gif',height='100%',href='#')
+                                            li#fabrica(style='background-color:#006DD9; text-align:center;')
+                                                    a(href='#',style='padding:0px')
+                                                            img(src='img/Fabrica_Site_r1_c11.gif',height='100%',href='#')
+                                            li#planos(style='background-color:#2CAA00; text-align:center;')
+                                                    a(href='#',style='padding:0px')
+                                                            img(src='img/Fabrica_Site_r1_c14.gif',height='100%',href='#')
+                                            li#servicos(style='background-color:#FFC926; text-align:center;')
+                                                    a(href='#',style='padding:0px')
+                                                            img(src='img/Fabrica_Site_r1_c15.gif',height='100%',href='#')
+                                            li#locacao(style='background-color:white; text-align:center;')
+                                                    a(href='#',style='padding:0px')
+                                                            img(src='img/Fabrica_Site_r1_c16.gif',height='100%',href='#')
+                                            li#contato(style='background-color:black; text-align:center;')
+                                                    a(href='#',style='padding:0px')
+                                                            img(src='img/Fabrica_Site_r1_c17.gif',height='100%',href='#')
+    .container.page
+          .hero-unit(style='padding:10px;')
+                  p(style='font-family:Changa One; font-size:40px; line-height:40px; font-weight:normal;') Um novo conceito de coworking
+                  p #{coworking}
+          .row
+                  .span6
+                          //.yellow
+                                h1 Fábrica de Ideias em recesso
+                                p A fábrica de ideias coworking estará em recesso do dia 21 de dezembro de 2012 até 2 de janeiro de 2013. Nós desejamos a todos os coworkers e visitantes um ótimo Natal e um feliz e próspero ano novo. Retornaremos às atividades no dia 3 de janeiro. Esperamos vocês em 2013, com muitas novidades e promoções! 
+                  .span6
+                          .red
+                                h1 O que é o coworking
+                                p #{whats}
+                                p #{vanta}
+                                | #{vant1}
+                                br
+                                | #{vant2}
+                                br
+                                | #{vant3}
+                                br
+                                | #{vant4}
+                                p
+          .row
+                  .span6(style='height:200px;')
+          .row
+                  .span6
+                          .blue
+                                h1 Sobre a fábrica
+                                p #{about}
+                                p #{environ}
+                                p #{thspace}
+          .row
+                  .span6(style='height:200px;')
+          .row
+                  .span6
+                          .green
+                                h1 Planos
+                                p #{aboutplans}
+                                p #{lawyers}
+                                p #{visitus}
+                  .span6
+                       .green
+                          table.ta1(cellpadding='0', cellspacing='0', border='0')
+                            colgroup
+                                col(width='156')
+                                col(width='775')
+                              tbody
+                                tr.ro1.title
+                                  td.ce1(style='text-align: left; width: 3.567cm;')
+                                    p PLANOS
+                                  td.ce3(style='text-align: left; width: 17.729cm;')
+                                    p VANTAGENS
+                                tr.ro2
+                                  td.ce2(style='text-align: left; width: 3.567cm;')
+                                    p Hora
+                                  td.ce4(style='text-align: left; width: 17.729cm;')
+                                    p #{hourly}
+                                tr.ro2
+                                  td.ce2(style='text-align: left; width: 3.567cm;')
+                                    p Meio Turno
+                                  td.ce4(style='text-align: left; width: 17.729cm;')
+                                    p #{halftr}
+                                tr.ro2
+                                  td.ce2(style='text-align: left; width: 3.567cm;')
+                                    p Diária
+                                  td.ce4(style='text-align: left; width: 17.729cm;')
+                                    p #{daily}
+                                tr.ro2
+                                  td.ce2(style='text-align: left; width: 3.567cm;')
+                                    p Semanal
+                                  td.ce4(style='text-align: left; width: 17.729cm;')
+                                    p #{weekly}
+                                tr.ro2
+                                  td.ce2(style='text-align: left; width: 3.567cm;')
+                                    p Quinzenal
+                                  td.ce4(style='text-align: left; width: 17.729cm;')
+                                    p #{halfmo}
+                                tr.ro2
+                                  td.ce2(style='text-align: left; width: 3.567cm;')
+                                    p Mensal
+                                  td.ce4(style='text-align: left; width: 17.729cm;')
+                                    p #{monthly}
+          .row
+                  .span6(style='height:200px;')
+          .row
+                  .span6
+                          .yellow
+                                  h1 Os serviços da Fábrica de Ideias
+                                  img(src='img/vantagens.png')
+          .row
+                  .span6(style='height:200px;')
+          .row
+                  .span6
+                       .white
+                          table.ta1(cellpadding='0', cellspacing='0', border='0')
+                            colgroup
+                              tbody
+                                tr.ro1.titleblack
+                                  td.ce3
+                                    p DIAS E HORÁRIOS DISPONÍVEIS PARA EVENTOS
+                                tr.ro2
+                                  td.ce4(style='text-align: left; width: 17.729cm;')
+                                    p #{monday}
+                                tr.ro2
+                                  td.ce4(style='text-align: left; width: 17.729cm;')
+                                    p #{satsun} 
+                  .span6
+                          .white
+                                  h1 Locação de espaço para eventos
+                                  p #{space}
+          .row
+                  .span6(style='height:210px;')
+          footer.black
+              p
+              .row
+                      .span4(style='color:white;')
+                          h1 Fábrica de Ideias Coworking
+                          | #{type}
+                          br
+                          | #{address}
+                          br
+                          a(href='mailto:#{email}',style='text-decoration:none; color:white;')
+                               |#{email}
+                          br
+                          | #{phone}
+                          p
+                          a(href='https://www.facebook.com/Fabricadeideiascw?ref=ts&fref=ts')
+                                  img(src='img/Fabrica_Site_r7_c3.gif',style='margin-top:5px; margin-right:5px; margin-bottom:5px;')
+                          a(href='https://twitter.com/fabricaideiascw')
+                                  img(src='img/Fabrica_Site_r7_c6.gif',style='margin:5px;')
+                          a(href='https://plus.google.com/u/0/114229628763368667145/posts')
+                                  img(src='img/Fabrica_Site_r7_c8.gif',style='margin:5px;')
+                          a(href='https://pt.foursquare.com/v/f%C3%A1brica-de-ideias-coworking--escrit%C3%B3rio-compartilhado/507e0c1a64a41ea912010f7c')
+                                  img(src='img/Fabrica_Site_r7_c10.gif',style='margin:5px;')
+                          br
+                          | Horário de funcionamento:
+                          br
+                          | Segunda a sexta-feira, das 9h às 19h
+                      .span4
+                              h1 Onde ficamos?
+                              iframe(width='320', height='240', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?daddr=-30.03274592560196,-51.21526837348938&ie=UTF8&ll=-30.032746,-51.215268&spn=0.006295,0.007272&t=m&output=embed')
+                                br
+                                      small
+                                            a(href='https://maps.google.com/maps?daddr=-30.03274592560196,-51.21526837348938&ie=UTF8&ll=-30.032746,-51.215268&spn=0.006295,0.007272&t=m&source=embed', style='color: #0000FF; text-align: left;') Exibir mapa ampliado
+              .row
+                      .span4(style='text-align:left;')
+    link(rel='stylesheet',href="css/bootstrap-responsive.min.css")
