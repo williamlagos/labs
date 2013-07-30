@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block base_content %}
+{% placeholder template_1_content %}
+<div id="Grade" style="margin-top:75px" class="hidden"></div>
+<div id="myCarousel" class="carousel slide main">
+  <div class="carousel-inner">
+    <div class="item active"><img src="{{ STATIC_URL }}assets/picture2.jpg" alt="">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Um novo conceito de coworking
+          </h1>
+          <p class="lead">Localizado no coração da cidade de Porto Alegre, a Fábrica de Ideias vai além de um simples espaço de coworking, pois é um lugar onde diversas oportunidades, ideias e parcerias podem acontecer.
+
+          </p><a href="#about" class="pages btn btn-large btn-primary">Entenda o Coworking</a>
+        </div>
+      </div>
+    </div>
+    <div class="item"><img src="{{ STATIC_URL }}assets/picture1.jpg" alt="">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Pronto para dar partida ao seu negócio
+          </h1>
+          <p class="lead">A estrutura do coworking e os serviços de contabilidade, jurídica e criação de nossos parceiros que oferecemos ajudarão a dar aquele gás no negócio que você estava esperando. 
+
+          </p><a href="#" class="pages btn btn-large btn-primary">Conheça a Fábrica</a>
+        </div>
+      </div>
+    </div>
+    <div class="item"><img src="{{ STATIC_URL }}assets/picture.jpg" alt="">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>O espaço perfeito para eventos
+          </h1>
+          <p class="lead">Contando com um espaço de boa capacidade e equipado com projetor, cadeiras e climatização, a Fábrica de Ideias é o seu próximo espaço para sediar eventos, tudo a custos flexíveis.
+
+          </p><a href="mailto:contato@fabricadeideiascw.com.br" class="btn btn-large btn-primary">Faça seu evento aqui</a>
+        </div>
+      </div>
+    </div>
+  </div><a href="#myCarousel" data-slide="prev" class="left carousel-control">‹</a><a href="#myCarousel" data-slide="next" class="right carousel-control">› </a>
+</div>
+<div class="container marketing">
+  <div class="row">
+    <div class="span4">
+      <h1>Melhor Custo-Benefício
+      </h1><img width="75%" src="{{ STATIC_URL }}assets/porco.png" class="highlight">
+      <p>Na Fábrica de Ideias, você paga menos e somente pelo que deseja utilizar, fechando planos que melhor estejam de acordo com as suas necessidades. Esqueça as várias contas a pagar, o fiador e o contrato anual. Aqui você paga apenas pelo que escolher. Burocracia zero!
+
+      </p>
+      <p class="centered"><a href="#" class="pages btn btn-block btn-success">Planos</a>
+      </p>
+    </div>
+    <div class="span4">
+      <h1>Boa Localização
+      </h1><img width="75%" src="{{ STATIC_URL }}assets/casa.png" class="highlight">
+      <p>O espaço está muito bem localizado entre a Rua Osvaldo Aranha e Avenida Independência. Nessa região concentra-se grandes pontos comerciais como bancos, restaurantes, Parque da Redenção, prestadores de serviços, estacionamentos, entre outros.
+
+      </p>
+      <p class="centered"><a href="#" class="pages btn btn-block btn-success">Conheça a Fábrica</a>
+      </p>
+    </div>
+    <div class="span4">
+      <h1>O Ponto das Ideias
+      </h1><img width="75%" src="{{ STATIC_URL }}assets/ideia.png" class="highlight">
+      <p>Proporcionamos um ambiente de trabalho colaborativo para o desenvolvimento das atividades profissionais. Faça networking com empreendedores, profissionais, investidores, participe de eventos e trabalhe num lugar inspirador, criativo e colaborativo!
+
+      </p>
+      <p class="centered"><a href="http://www.facebook.com/fabricadeideiascw/events" class="btn btn-block btn-success">Veja nossa agenda</a>
+      </p>
+    </div>
+  </div>
+</div>
+<div id="Espaco" class="modal fade hide">
+</div>
+<footer style="background:black; position:absolute; width:100%; margin-top:60px">
+  <div class="container">
+    <div style="color:white;" class="span4">
+          <h1 class="title">Fábrica de Ideias Coworking
+          </h1>Escritório Compartilhado
+<br>Rua Garibaldi, 1336 - Porto Alegre - RS
+<br><a href="mailto:contato@fabricadeideiascw.com.br" style="text-decoration:none; color:white;">contato@fabricadeideiascw.com.br
+</a><br>Telefone: +5551 3516-2367
+
+          <p>
+          </p><a href="https://www.facebook.com/Fabricadeideiascw?ref=ts&fref=ts"><img src="{{ STATIC_URL }}assets/facebook.gif" style="margin-top:5px; margin-right:5px; margin-bottom:5px;"></a><a href="https://twitter.com/fabricaideiascw"><img src="{{ STATIC_URL }}assets/twitter.gif" style="margin:5px;"></a><a href="https://plus.google.com/u/0/114229628763368667145/posts"><img src="{{ STATIC_URL }}assets/google.gif" style="margin:5px;"></a><a href="https://pt.foursquare.com/v/f%C3%A1brica-de-ideias-coworking--escrit%C3%B3rio-compartilhado/507e0c1a64a41ea912010f7c"><img src="{{ STATIC_URL }}assets/foursquare.gif" style="margin:5px;"></a><br>Horário de funcionamento:
+<br>Segunda a sexta-feira, das 9h às 19h
+
+        </div>
+        <div class="span3">
+          <h1 class="title">Onde ficamos?
+          </h1>
+          <iframe width="240" height="180" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?daddr=-30.03274592560196,-51.21526837348938&ie=UTF8&ll=-30.032746,-51.215268&spn=0.006295,0.007272&t=m&output=embed"><br>
+          </iframe>
+        </div>
+        <div class="span4">
+          <h1 class="title">Nossos parceiros:<img href="http://www.efforia.com.br/" src="{{ STATIC_URL }}assets/efforia.png" class="redirect">
+          </h1>
+        </div>
+      </div>
+    </footer>
+    <script>!function($){
+  $(function(){
+    $('#myCarousel').carousel()
+  })
+}(window.jQuery)
+    </script>
+<script>$(document).ready(function(){
+  $('.redirect,.brand').on('click',function(event){
+    event.preventDefault();
+    window.location = $(this).attr('href');
+  });
+  $('.grid').on('click',function(event){
+    $('#myCarousel').addClass('hidden');
+    $('#Grade').removeClass('hidden').css({'height':$('.block').height()});
+  });
+});
+
+    </script>
+{% endblock %}

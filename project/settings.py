@@ -111,7 +111,7 @@ TEMPLATE_DIRS = (
 
 CMS_TEMPLATES = (
     ('template_1.html', 'Bootstrap Template'),
-    ('template_2.html', 'Template Two'),
+    ('index.html', 'Base Template'),
 )
 
 LANGUAGES = [
