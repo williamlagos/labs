@@ -62,5 +62,32 @@
       {% placeholder "Navegacao" %}
       {% block base_content %}{% endblock %}
       {% render_block "js" %}
+      <footer style="background:black; position:absolute; width:100%; margin-top:60px">
+  	  <div class="container">
+      <div style="color:white;" class="span4">
+      {% placeholder "Endereco" or %}
+        <h1 class="title">Fábrica de Ideias Coworking
+        </h1>Escritório Compartilhado
+		<br>Rua Garibaldi, 1336 - Porto Alegre - RS
+		<br><a href="mailto:contato@fabricadeideiascw.com.br" style="text-decoration:none; color:white;">contato@fabricadeideiascw.com.br
+		</a><br>Telefone: +5551 3516-2367
+        <p></p><a href="https://www.facebook.com/Fabricadeideiascw?ref=ts&fref=ts"><img src="{{ STATIC_URL }}assets/facebook.gif" style="margin-top:5px; margin-right:5px; margin-bottom:5px;"></a><a href="https://twitter.com/fabricaideiascw"><img src="{{ STATIC_URL }}assets/twitter.gif" style="margin:5px;"></a><a href="https://plus.google.com/u/0/114229628763368667145/posts"><img src="{{ STATIC_URL }}assets/google.gif" style="margin:5px;"></a><a href="https://pt.foursquare.com/v/f%C3%A1brica-de-ideias-coworking--escrit%C3%B3rio-compartilhado/507e0c1a64a41ea912010f7c"><img src="{{ STATIC_URL }}assets/foursquare.gif" style="margin:5px;"></a><br>Horário de funcionamento:
+		<br>Segunda a sexta-feira, das 9h às 19h
+	  {% endplaceholder %}
+      </div>
+      <div class="span3">
+      {% placeholder "OndeFicamos" or %}
+        <h1 class="title">Onde ficamos?</h1>
+        <iframe width="240" height="180" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?daddr=-30.03274592560196,-51.21526837348938&ie=UTF8&ll=-30.032746,-51.215268&spn=0.006295,0.007272&t=m&output=embed"><br>
+        </iframe>
+      {% endplaceholder %}
+      </div>
+      <div class="span4">
+      {% placeholder "Parceiros" or %}
+        <h1 class="title">Nossos parceiros:<img href="http://www.efforia.com.br/" src="{{ STATIC_URL }}assets/efforia.png" class="redirect"></h1>
+      {% endplaceholder %}
+      </div>
+  	  </div>
+	  s</footer>
   </body>
 </html>
