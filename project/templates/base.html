@@ -39,17 +39,18 @@
     </script>
   </head>
   <body>
-      <div class="navbar-wrapper">
       <div class="container">
-        <div class="navbar navbar-inverse">
+        <div class="navbar navbar-fixed-top navbar-inverse">
           <div class="navbar-inner">
             <button type="button" data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-            </button><a href="/" style="padding:5px; font-weight:normal; font-size:x-large;" class="brand redirect"><img src="{{ STATIC_URL }}assets/logo.gif" style="height:40px;">Fábrica de Ideias </a>
+            </button><a href="/" style="margin-left:30px; padding:5px; font-weight:normal; font-size:x-large;" class="brand redirect"><img src="{{ STATIC_URL }}assets/logo.gif" style="height:40px;">Fábrica de Ideias </a>
             <div class="nav-collapse collapse">
+            {% load menu_tags %}
               <ul class="nav">
-                <li><a href="#" class="pages">Entenda o Coworking</a></li>
+				{% show_menu 0 100 0 100 %}
+                <!--<li><a href="#" class="pages">Entenda o Coworking</a></li>
                 <li><a href="#" class="pages">Conheça a Fábrica</a></li>
-                <li><a href="#" class="pages">Planos</a></li>
+                <li><a href="#" class="pages">Planos</a></li>!-->
                 <li><a href="http://www.facebook.com/fabricadeideiascw/events">Agenda</a></li>
                 <li><a href="mailto:contato@fabricadeideiascw.com.br" style="background:#DD0;color:black">Venha conhecer</a></li>
               </ul>
@@ -57,9 +58,8 @@
           </div>
         </div>
       </div>
-      </div>
       {% cms_toolbar %}
-      {% placeholder base_content %}
+      {% placeholder "Navegacao" %}
       {% block base_content %}{% endblock %}
       {% render_block "js" %}
   </body>

@@ -110,7 +110,7 @@ TEMPLATE_DIRS = (
 )
 
 CMS_TEMPLATES = (
-    ('template_1.html', 'Bootstrap Template'),
+    ('bootstrap.html', 'Bootstrap Template'),
     ('index.html', 'Base Template'),
 )
 
