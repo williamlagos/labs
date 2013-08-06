@@ -25,7 +25,7 @@
 }
 
 * { font-family:"Montserrat"; }
-body { padding-bottom: 40px; color: #5a5a5a; }
+body { padding-bottom: 40px; color: black; }
 h1,h2,h3,h4,.brand { font-family:"Changa One"; font-weight:normal; }
 .well { margin-top:75px; width:80%; margin-left:10%; line-height:1.5; font-size: 1.2em }
 .title { color:white; font-size:2.0em; text-align:left; }
@@ -35,12 +35,14 @@ h1,h2,h3,h4,.brand { font-family:"Changa One"; font-weight:normal; }
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
-#myCarousel {
-  z-index:0;
+.wrapper{
+  padding:5%;
+  font-size:16px;
+  line-height:1.5;
 }
 
-.navbar-wrapper .navbar {
-
+#myCarousel {
+  z-index:0;
 }
 
 /* Remove border and change up box shadow for more contrast */
