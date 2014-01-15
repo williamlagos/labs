@@ -101,7 +101,7 @@ h1,h2,h3,h4,.brand { font-family:"Changa One"; font-weight:normal; }
 }
 .carousel img {
   position: absolute;
-  top: -250px;
+  top: -500px;
   left: 0;
   min-width: 100%;
 }
