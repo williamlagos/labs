@@ -1,1 +1,1 @@
-web: python manage.py runserver 0.0.0.0:$PORT --settings='project.production'
+web: gunicorn hub.wsgi --log-file -
