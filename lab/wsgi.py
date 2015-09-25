@@ -11,5 +11,5 @@ from django.core.wsgi import get_wsgi_application
 from dj_static import Cling
 import os
 
-os.environ['DJANGO_SETTINGS_MODULE'] = 'hub.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'lab.settings'
 application = Cling(get_wsgi_application())
