@@ -23,3 +23,15 @@ li a,h1 {
   background-color: #5B6AB1;
   border-color: #424F7F;
 }
+
+nav a {
+  color: #FFFFFF;
+}
+
+.navbar-toggle {
+  border-color: #FFFFFF;
+}
+
+.navbar-toggle .icon-bar {
+  background: #FFFFFF;
+}
