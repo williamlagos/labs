@@ -19,13 +19,24 @@ li a,h1 {
   font-weight: bold;
 }
 
+nav a {
+  color: #FFFFFF;
+}
+
 .navbar-blue {
   background-color: #5B6AB1;
   border-color: #424F7F;
 }
 
-nav a {
-  color: #FFFFFF;
+.navbar-brand {
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.navbar-brand img {
+  display:inline;
+  height:1.5em;
+  align:middle;
 }
 
 .navbar-toggle {

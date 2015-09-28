@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-25 19:12+0000\n"
+"POT-Creation-Date: 2015-09-28 19:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,63 +18,101 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: env/lib/python2.7/site-packages/polymorphic/templates/admin/polymorphic/change_form.html:7
-#: env/lib/python2.7/site-packages/polymorphic/templates/admin/polymorphic/delete_confirmation.html:6
-msgid "Home"
-msgstr ""
-
-#: env/lib/python2.7/site-packages/polymorphic/templates/admin/polymorphic/change_form.html:10
-msgid "Add"
-msgstr ""
-
-#: env/lib/python2.7/site-packages/polymorphic/templates/admin/polymorphic/delete_confirmation.html:10
-msgid "Delete"
-msgstr ""
-
-#: lab/templates/base.html:23
+#: lab/templates/base.html:34
 msgid "Toggle navigation"
 msgstr "Ativar navegação"
 
-#: lab/templates/base.html:28
-msgid "Project name"
-msgstr "Nome do projeto"
+#: lab/templates/base.html:45
+msgid "About"
+msgstr "Sobre"
 
-#: lab/templates/base.html:36
-msgid "Password"
-msgstr "Senha"
+#: lab/templates/base.html:46
+msgid "Agenda"
+msgstr "Eventos"
 
-#: lab/templates/base.html:38
-msgid "Sign in"
-msgstr "Entrar"
+#: lab/templates/base.html:47
+msgid "Open Source"
+msgstr "Código Aberto"
 
 #: lab/templates/base.html:48
-msgid "Company"
-msgstr "Empresa"
+msgid "Contact"
+msgstr "Contato"
 
 #: lab/templates/index.html:10
-msgid "Hello, world!"
-msgstr "Olá, mundo!"
+msgid "Do it your next event, course or talk here."
+msgstr "Faça seu próximo evento, curso ou palestra aqui."
 
 #: lab/templates/index.html:11
 msgid ""
-"This is a template for a simple marketing or informational website. It "
-"includes a large callout called a jumbotron and three supporting pieces of "
-"content. Use it as a starting point to create something more unique."
+"Fabrica de Ideias Lab is a space located at Porto Alegre downtown for events."
 msgstr ""
-"Este é um template para marketing simples e website de informações.Inclui um "
-"grande painel chamado jumbotron e três colunas de conteúdo.Use como um ponto "
-"de começo para criar algo único."
+"O Lab é um espaço de iniciativa da Fábrica de Ideias Coworking para a "
+"realização de diversos pequenos eventos, localizado ao centro de Porto "
+"Alegre e extremamente versátil."
 
 #: lab/templates/index.html:12
 msgid "Learn more"
 msgstr "Saiba mais"
 
-#: lab/templates/index.html:20 lab/templates/index.html.py:25
-#: lab/templates/index.html:30
-msgid "Heading"
-msgstr "Cabeçalho"
+#: lab/templates/index.html:20
+msgid "Networking Day"
+msgstr "Networking Day"
+
+#: lab/templates/index.html:21
+msgid "Networking Event at Fábrica de Ideias."
+msgstr "Evento de Networking na Fábrica de Ideias Lab."
 
 #: lab/templates/index.html:22 lab/templates/index.html.py:27
 #: lab/templates/index.html:32
 msgid "View details"
 msgstr "Veja detalhes"
+
+#: lab/templates/index.html:25
+msgid "Azure Love's Startups"
+msgstr "Azure Love's Startups"
+
+#: lab/templates/index.html:26
+msgid "Microsoft Azure Cloud Event at Fábrica de Ideias."
+msgstr "Evento sobre a nuvem da Microsoft, o Azure, na Fábrica."
+
+#: lab/templates/index.html:30
+msgid "Efforia HUB Pro"
+msgstr "Efforia HUB Pro"
+
+#: lab/templates/index.html:31
+msgid "Efforia HUB Pro Launch Event at Fábrica de Ideias."
+msgstr "Lançamento do Efforia HUB Pro na Fábrica de Ideias."
+
+#: lab/templates/index.html:38
+msgid "Fábrica de Ideias Coworking"
+msgstr "Fábrica de Ideias Coworking"
+
+#~ msgid "previous"
+#~ msgstr "prévio"
+
+#~ msgid "Project name"
+#~ msgstr "Nome do projeto"
+
+#~ msgid "Password"
+#~ msgstr "Senha"
+
+#~ msgid "Sign in"
+#~ msgstr "Entrar"
+
+#~ msgid "Company"
+#~ msgstr "Empresa"
+
+#~ msgid "Hello, world!"
+#~ msgstr "Olá, mundo!"
+
+#~ msgid ""
+#~ "This is a template for a simple marketing or informational website. It "
+#~ "includes a large callout called a jumbotron and three supporting pieces "
+#~ "of content. Use it as a starting point to create something more unique."
+#~ msgstr ""
+#~ "Este é um template para marketing simples e website de informações.Inclui "
+#~ "um grande painel chamado jumbotron e três colunas de conteúdo.Use como um "
+#~ "ponto de começo para criar algo único."
+
+#~ msgid "Heading"
+#~ msgstr "Cabeçalho"
