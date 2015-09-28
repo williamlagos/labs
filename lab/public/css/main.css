@@ -4,19 +4,15 @@
    Author's custom styles
    ========================================================================== */
 
+body {
+  /*font-family: "Roboto";*/
+  font-weight: lighter;
+}
 
+h1,h2,h3 {
+  font-weight: bold;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+li a,h1 {
+  text-transform: uppercase;
+}

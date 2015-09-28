@@ -15,9 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from lab.views import HomePageView
+from lab.views import *
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', HomePageView.as_view(), name='home')
+    url(r'^$', HomePageView.as_view(), name='home'),
+    url(r'^about/', AboutPageView.as_view(), name='about'),
+    url(r'^agenda/', CalendarPageView.as_view(), name='agenda'),
+    url(r'^opensource/', OpenSourcePageView.as_view(), name='opensource'),
+    url(r'^contact/', ContactPageView.as_view(), name='contact'),
 ]
