@@ -17,20 +17,6 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4 centered">
-          <h2>{% trans "Networking Day" %}</h2>
-          <h1><span class="label label-info">30/09, às 20h</span></h1><h2></h2>
-          <img src="{% static "svg/megaphone.svg" %}" width="90%" height="90%" class="rounded"/>
-          <p></p><p>{% trans "Networking Event at Fábrica de Ideias." %}</p>
-          <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
-          <form action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post">
-          <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
-          <input type="hidden" name="itemCode" value="0339BEC75E5EC23FF41C4F8F8B75F3E9" />
-          <h2><input type="image" class="btn btn-success" name="submit" alt="R$ 40,00 - Comprar entrada" /></h2>
-          </form>
-          <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
-          <!--<p><a class="btn btn-default" href="#" role="button">{% trans "View details" %} &raquo;</a></p>!-->
-        </div>
-        <div class="col-md-4 centered">
           <h2>{% trans "Azure Love's Startups" %}</h2>
           <h1><span class="label label-info">03/10, às 14h</span></h1><h2></h2>
           <img src="{% static "svg/rocket.svg" %}" width="90%" height="90%" class="rounded"/>
@@ -43,13 +29,27 @@
           </form>
           <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
           <!--<p><a class="btn btn-default" href="#" role="button">{% trans "View details" %} &raquo;</a></p>!-->
-       </div>
+        </div>
         <div class="col-md-4 centered">
           <h2>{% trans "Efforia HUB Pro" %}</h2>
           <h1><span class="label label-info">Em Breve</span></h1><h2></h2>
           <img src="{% static "svg/hubpro.svg" %}" width="90%" height="90%" class="rounded"/>
           <p></p><p>{% trans "Efforia HUB Pro Launch Event at Fábrica de Ideias."%}</p>
           <h2><a class="btn btn-success" href="#" role="button"> Entrada Franca </a></h2>
+          <!--<p><a class="btn btn-default" href="#" role="button">{% trans "View details" %} &raquo;</a></p>!-->
+        </div>
+        <div class="col-md-4 centered">
+          <h2>{% trans "Networking Day" %}</h2>
+          <h1><span class="label label-info">20/10, às 20h</span></h1><h2></h2>
+          <img src="{% static "svg/new.svg" %}" width="90%" height="90%" class="rounded"/>
+          <p></p><p>{% trans "Networking Event at Fábrica de Ideias." %}</p>
+          <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+          <form action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post">
+          <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+          <input type="hidden" name="itemCode" value="0339BEC75E5EC23FF41C4F8F8B75F3E9" />
+          <h2><input type="image" class="btn btn-success" name="submit" alt="R$ 40,00 - Comprar entrada" /></h2>
+          </form>
+          <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
           <!--<p><a class="btn btn-default" href="#" role="button">{% trans "View details" %} &raquo;</a></p>!-->
         </div>
       </div>
