@@ -1,5 +1,5 @@
 Pillow
-Django==1.5.4
+Django==1.11.28
 South==0.8.2
 cmsplugin-filer==0.9.5
 distribute==0.6.34
