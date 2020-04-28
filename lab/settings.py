@@ -69,7 +69,7 @@ LOCALE_PATHS = (
     'lab/locale',
 )
 
-LOGGING_CONFIG = 'django.utils.log.dictConfig'
+# LOGGING_CONFIG = 'django.utils.log.dictConfig'
 
 LOGGING = {
     'version': 1,
