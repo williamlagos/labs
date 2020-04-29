@@ -15,13 +15,16 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django_distill import distill_url
 from lab.views import *
+
+def getNone(): return None
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', HomePageView.as_view(), name='home'),
-    url(r'^sobre/', AboutPageView.as_view(), name='about'),
-    url(r'^agenda/', CalendarPageView.as_view(), name='agenda'),
-    url(r'^opensource/', OpenSourcePageView.as_view(), name='opensource'),
-    url(r'^contato/', ContactPageView.as_view(), name='contact'),
+    distill_url(r'^$', HomePageView.as_view(), name='home', distill_func=getNone),
+    distill_url(r'^sobre/', AboutPageView.as_view(), name='about', distill_func=getNone),
+    distill_url(r'^agenda/', CalendarPageView.as_view(), name='agenda', distill_func=getNone),
+    distill_url(r'^opensource/', OpenSourcePageView.as_view(), name='opensource', distill_func=getNone),
+    distill_url(r'^contato/', ContactPageView.as_view(), name='contact', distill_func=getNone),
 ]
