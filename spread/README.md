@@ -1,4 +1,0 @@
-efforia
-=======
-
-Efforia Social Platform
