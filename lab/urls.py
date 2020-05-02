@@ -15,13 +15,18 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from lab.views import *
+from django_distill import distill_url
+from django.conf import settings
+from django.conf.urls.static import static
+from .views import *
+
+def getNone(): return None
 
 urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', HomePageView.as_view(), name='home'),
-    url(r'^sobre/', AboutPageView.as_view(), name='about'),
-    url(r'^agenda/', CalendarPageView.as_view(), name='agenda'),
-    url(r'^opensource/', OpenSourcePageView.as_view(), name='opensource'),
-    url(r'^contato/', ContactPageView.as_view(), name='contact'),
-]
+    # url(r'^admin/', include(admin.site.urls)),
+    distill_url(r'^$', HomePageView.as_view(), name='home', distill_func=getNone),
+    distill_url(r'^sobre/', AboutPageView.as_view(), name='about', distill_func=getNone),
+    distill_url(r'^agenda/', CalendarPageView.as_view(), name='agenda', distill_func=getNone),
+    distill_url(r'^opensource/', OpenSourcePageView.as_view(), name='opensource', distill_func=getNone),
+    distill_url(r'^contato/', ContactPageView.as_view(), name='contact', distill_func=getNone),
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
