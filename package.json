@@ -1,0 +1,22 @@
+{
+  "name": "labs",
+  "version": "1.0.0",
+  "description": "Labs home page and contents front",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/efforia/labs.git"
+  },
+  "author": "Efforia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/efforia/labs/issues"
+  },
+  "homepage": "https://github.com/efforia/labs#readme"
+}
