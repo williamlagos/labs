@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/efforia/labs/issues"
   },
-  "homepage": "https://github.com/efforia/labs#readme"
+  "homepage": "https://github.com/efforia/labs#readme",
+  "dependencies": {
+    "gatsby": "^2.24.57"
+  }
 }
