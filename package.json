@@ -20,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/efforia/labs.git"
   },
-  "author": "Efforia",
+  "author": "Efforia <ola@efforia.io>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/efforia/labs/issues"
