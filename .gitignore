@@ -3,6 +3,7 @@
 env
 static
 output
+public
 
 # Logs
 logs
