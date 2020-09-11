@@ -1,5 +1,6 @@
 {
   "name": "labs",
+  "private": true,
   "version": "1.0.0",
   "description": "Labs home page and contents front",
   "main": "index.js",
@@ -7,7 +8,13 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -27,6 +34,13 @@
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sharp": "^2.6.35",
     "gatsby-source-filesystem": "^2.3.29",
-    "gatsby-transformer-sharp": "^2.5.14"
+    "gatsby-transformer-sharp": "^2.5.14",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.1"
   }
 }
