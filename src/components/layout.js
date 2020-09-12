@@ -11,7 +11,11 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+
 import "./layout.css"
+import "./main.css"
+
+import labsLogoPath from "../images/labs.png"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -32,7 +36,6 @@ const Layout = ({ children }) => {
         <title>Efforia Labs  </title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="./static/css/bootstrap.min.css" />
         {/*<style>
           body { padding-top: 50px; padding-bottom: 20px; }
           @font-face {
@@ -45,9 +48,7 @@ const Layout = ({ children }) => {
             font-weight: bold;
           }
         </style>*/}
-        <link rel="shortcut icon" href="./static/img/labs.png" />
-        <link rel="stylesheet" href="./static/css/main.css" />
-        <script src="./static/js/vendor/modernizr-2.8.3.min.js"></script>  
+        <link rel="shortcut icon" href={labsLogoPath} />
       </Helmet>
       <body>
         <Header siteTitle={data.site.siteMetadata.title} />
@@ -80,10 +81,6 @@ const Layout = ({ children }) => {
             <p className="text-muted centered">Efforia © 2020</p>
           </div>
         </footer>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        {/*<script>window.jQuery || document.write('<script src="./static/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>*/}
-        <script src="./static/js/vendor/bootstrap.min.js"></script>
-        <script src="./static/js/main.js"></script>
         {/*<script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
