@@ -36,18 +36,6 @@ const Layout = ({ children }) => {
         <title>Efforia Labs  </title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/*<style>
-          body { padding-top: 50px; padding-bottom: 20px; }
-          @font-face {
-            font-family: 'Roboto';
-            src: url("./static/fonts/roboto-thin.ttf");
-          }
-          @font-face {
-            font-family: 'Roboto';
-            src: url("./static/fonts/roboto-bold.ttf");
-            font-weight: bold;
-          }
-        </style>*/}
         <link rel="shortcut icon" href={labsLogoPath} />
       </Helmet>
       <body>
