@@ -4,6 +4,17 @@
    Author's custom styles
    ========================================================================== */
 
+body { padding-top: 50px; padding-bottom: 20px; }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/ttf/roboto-thin.ttf");
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/ttf/roboto-bold.ttf");
+  font-weight: bold;
+}
+
 body {
   font-family: "Roboto";
 }
