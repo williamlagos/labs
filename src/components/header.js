@@ -3,32 +3,27 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <nav className="navbar navbar-blue navbar-fixed-top" role="navigation">
+    <div className="container">
+      <div className="navbar-header">
+        <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span className="sr-only">Ativar navegação</span>
+          <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
+        </button>
+        <a className="navbar-brand" href="/">
+          <img alt="Efforia Labs" src="./static/svg/labs.svg"/>
+        </a>
+      </div>
+      <div id="navbar" className="navbar-collapse collapse">
+        <ul className="nav navbar-nav navbar-right">
+          <li><a href="./agenda/">Eventos</a></li>
+          <li><a href="./opensource/">Código Aberto</a></li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
 )
 
 Header.propTypes = {
