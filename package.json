@@ -35,10 +35,13 @@
     "gatsby-plugin-sharp": "^2.6.35",
     "gatsby-source-filesystem": "^2.3.29",
     "gatsby-transformer-sharp": "^2.5.14",
+    "grommet": "^2.15.0",
+    "grommet-icons": "^4.4.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.2.0"
   },
   "devDependencies": {
     "prettier": "^2.1.1"
