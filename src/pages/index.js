@@ -5,42 +5,57 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 
+import { Card, CardHeader, CardBody, CardFooter } from "grommet"
+import { Main, Heading, Paragraph, Box, Button, Image } from "grommet"
+import { Favorite, ShareOption } from "grommet-icons"
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
-    <div className="jumbotron">
-      <div className="container text-center">
-        <img className="img-fluid logo" alt="Efforia Labs logo" src="./static/svg/labs_outline.svg"></img>
-        <h2>A próxima inspiração começa por aqui.</h2>
-        <p>Labs é um espaço para projetos experimentais na Efforia</p>
-      </div>
-    </div>
+    <Main>
+      <Box align="center">
+        <Image alt="Efforia Labs logo" src="./static/svg/labs_outline.svg" />
+        <Heading>A próxima inspiração começa por aqui.</Heading>
+        <Paragraph>Labs é um espaço para projetos experimentais na Efforia</Paragraph>
+      </Box>
+    </Main>
 
-    <div className="container">
-      <div className="row">
-        <div className="col-md-4 centered">
-          <h2>Apollo</h2>
-          <h1><span className="label label-info">12/10</span></h1>
-          <img src="./static/svg/rocket.svg" alt="Rocket launch" width="90%" height="90%" className="rounded"/>
-          <p></p><p>Projeto de Landing Page e CMS.</p>
-        </div>
-        <div className="col-md-4 centered">
-          <h2>Cursos</h2>
-          <h1><span className="label label-info">Em Breve</span></h1>
-          <img src="./static/svg/hubpro.svg" alt="Efforia Labs logo" width="90%" height="90%" className="rounded"/>
-          <p></p><p>Cursos de Design e Desenvolvimento.</p>
-        </div>
-        <div className="col-md-4 centered">
-          <h2>Dinamo</h2>
-          <h1><span className="label label-info">Em Breve</span></h1>
-          <img src="./static/svg/new.svg" alt="Dinamo figure" width="90%" height="90%" className="rounded"/>
-          <p></p><p>Game de aventura em formato side-scrolling.</p>
-        </div>
-      </div>
-    </div>
-    <p></p><br/>
-
+    <Box align="center" direction="row">
+      <Card margin="small" background="light-1">
+        <CardHeader pad="medium">
+          <Heading>Apollo</Heading>
+          <Image src="../assets/svg/rocket.svg" alt="Rocket launch" />
+        </CardHeader>
+        <CardBody pad="medium">Projeto de Landing Page e CMS.</CardBody>
+        <CardFooter pad={{horizontal: "small"}} background="light-2">   
+          <Button icon={<Favorite color="red" />} hoverIndicator />
+          <Button icon={<ShareOption color="plain" />} hoverIndicator />
+        </CardFooter>
+      </Card>
+      <Card background="light-1">
+        <CardHeader pad="medium">
+          <Heading>Cursos</Heading>
+          <Image src="./static/svg/hubpro.svg" alt="Efforia Labs logo" />
+        </CardHeader>
+        <CardBody pad="medium">Cursos de Design e Desenvolvimento.</CardBody>
+        <CardFooter pad={{horizontal: "small"}} background="light-2">   
+          <Button icon={<Favorite color="red" />} hoverIndicator />
+          <Button icon={<ShareOption color="plain" />} hoverIndicator />
+        </CardFooter>
+      </Card>
+      <Card background="light-1">
+        <CardHeader>
+          <Heading>Dinamo</Heading>
+          <Image src="./static/svg/new.svg" alt="Dinamo figure" />
+        </CardHeader>
+        <CardBody pad="medium">Game de aventura em formato side-scrolling.</CardBody>
+        <CardFooter pad={{horizontal: "small"}} background="light-2">   
+          <Button icon={<Favorite color="red" />} hoverIndicator />
+          <Button icon={<ShareOption color="plain" />} hoverIndicator />
+        </CardFooter>
+      </Card>
+    </Box>
 
   </Layout>
 )
