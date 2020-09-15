@@ -16,7 +16,7 @@ import Head from "./header"
 import "./layout.css"
 import "./main.css"
 
-import labsLogoPath from "../images/labs.png"
+import labsLogo from "../images/labs.png"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
         <title>Efforia Labs  </title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="shortcut icon" href={labsLogoPath} />
+        <link rel="shortcut icon" href={labsLogo} />
       </Helmet>
       <Head siteTitle={data.site.siteMetadata.title} />
       {children}
