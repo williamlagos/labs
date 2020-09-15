@@ -19,8 +19,10 @@ const IndexPage = () => (
     <SEO title="Home" />
 
     <Main>
-      <Box align="center">
-        <Image alt="Efforia Labs logo" src={labsOutline} />
+      <Box margin="large" align="center">
+        <Box height="small" width="small" align="center">
+          <Image alt="Efforia Labs logo" src={labsOutline} />
+        </Box>
         <Heading>A próxima inspiração começa por aqui.</Heading>
         <Paragraph>Labs é um espaço para projetos experimentais na Efforia</Paragraph>
       </Box>
@@ -30,7 +32,9 @@ const IndexPage = () => (
       <Card margin="small" background="light-1">
         <CardHeader pad="medium">
           <Heading>Apollo</Heading>
-          <Image src={rocketImage} alt="Rocket launch" />
+          <Box height="small" width="small" align="center">
+            <Image src={rocketImage} alt="Rocket launch" />
+          </Box>
         </CardHeader>
         <CardBody pad="medium">Projeto de Landing Page e CMS.</CardBody>
         <CardFooter pad={{horizontal: "small"}} background="light-2">   
@@ -38,10 +42,12 @@ const IndexPage = () => (
           <Button icon={<ShareOption color="plain" />} hoverIndicator />
         </CardFooter>
       </Card>
-      <Card background="light-1">
+      <Card margin="small" background="light-1">
         <CardHeader pad="medium">
           <Heading>Cursos</Heading>
-          <Image src={hexagonLogo} alt="Efforia Labs logo" />
+          <Box height="small" width="small" align="center">
+            <Image src={hexagonLogo} alt="Efforia Labs logo" />
+          </Box>
         </CardHeader>
         <CardBody pad="medium">Cursos de Design e Desenvolvimento.</CardBody>
         <CardFooter pad={{horizontal: "small"}} background="light-2">   
@@ -49,10 +55,12 @@ const IndexPage = () => (
           <Button icon={<ShareOption color="plain" />} hoverIndicator />
         </CardFooter>
       </Card>
-      <Card background="light-1">
-        <CardHeader>
+      <Card margin="small" background="light-1">
+        <CardHeader pad="medium">
           <Heading>Dinamo</Heading>
-          <Image src={dinamoImage} alt="Dinamo figure" />
+          <Box height="small" width="small" align="center">
+            <Image src={dinamoImage} alt="Dinamo figure" />
+          </Box>
         </CardHeader>
         <CardBody pad="medium">Game de aventura em formato side-scrolling.</CardBody>
         <CardFooter pad={{horizontal: "small"}} background="light-2">   
