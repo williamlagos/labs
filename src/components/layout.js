@@ -41,12 +41,10 @@ const Layout = ({ children }) => {
       </Helmet>
       <Head siteTitle={data.site.siteMetadata.title} />
       {children}
-      <Footer background="brand">
-        <Box>
+      <Footer pad="medium" background="brand">
           <Heading className="centered white"><div className="hidden-xs inline"> </div>+55 (51) 998 485 888</Heading>
           <Heading className="centered white" style={{ "fontSize": "1.2em" }}><div className="hidden-xs inline ">E-mail: </div>labs@efforia.io</Heading>
           <Paragraph className="text-muted centered">Efforia © 2020</Paragraph>
-        </Box>
       </Footer>
     </Grommet>
   )
