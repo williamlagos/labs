@@ -8,7 +8,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
-import { Grommet } from 'grommet'
+import { Grommet, Footer, Box, Heading, Paragraph } from 'grommet'
 import { useStaticQuery, graphql } from "gatsby"
 
 import Head from "./header"
@@ -41,13 +41,13 @@ const Layout = ({ children }) => {
       </Helmet>
       <Head siteTitle={data.site.siteMetadata.title} />
       {children}
-      <footer className="footer">
-        <div className="container">
-          <h1 className="centered white"><div className="hidden-xs inline"> </div>+55 (51) 998 485 888</h1>
-          <h3 className="centered white" style={{ "fontSize": "1.2em" }}><div className="hidden-xs inline ">E-mail: </div>labs@efforia.io</h3>
-          <p className="text-muted centered">Efforia © 2020</p>
-        </div>
-      </footer>
+      <Footer background="brand">
+        <Box>
+          <Heading className="centered white"><div className="hidden-xs inline"> </div>+55 (51) 998 485 888</Heading>
+          <Heading className="centered white" style={{ "fontSize": "1.2em" }}><div className="hidden-xs inline ">E-mail: </div>labs@efforia.io</Heading>
+          <Paragraph className="text-muted centered">Efforia © 2020</Paragraph>
+        </Box>
+      </Footer>
     </Grommet>
   )
 }
