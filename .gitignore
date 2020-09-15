@@ -4,6 +4,7 @@ env
 static
 output
 public
+.DS_Store
 
 # Logs
 logs
