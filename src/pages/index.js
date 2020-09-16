@@ -31,8 +31,8 @@ const IndexPage = () => (
     <Box align="center" direction="row">
       <Card margin="small" background="light-1">
         <CardHeader pad="medium">
-          <Heading>Apollo</Heading>
-          <Box height="small" width="small" align="center">
+          <Box height="medium" width="medium" direction="column" align="center">
+            <Heading>Apollo</Heading>
             <Image src={rocketImage} alt="Rocket launch" />
           </Box>
         </CardHeader>
@@ -44,8 +44,8 @@ const IndexPage = () => (
       </Card>
       <Card margin="small" background="light-1">
         <CardHeader pad="medium">
-          <Heading>Cursos</Heading>
-          <Box height="small" width="small" align="center">
+          <Box height="medium" width="medium" direction="column" align="center">
+            <Heading>Cursos</Heading>
             <Image src={hexagonLogo} alt="Efforia Labs logo" />
           </Box>
         </CardHeader>
@@ -57,8 +57,8 @@ const IndexPage = () => (
       </Card>
       <Card margin="small" background="light-1">
         <CardHeader pad="medium">
-          <Heading>Dinamo</Heading>
-          <Box height="small" width="small" align="center">
+          <Box height="medium" width="medium" direction="column" align="center">
+            <Heading>Dinamo</Heading>
             <Image src={dinamoImage} alt="Dinamo figure" />
           </Box>
         </CardHeader>
