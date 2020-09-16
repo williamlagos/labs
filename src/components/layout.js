@@ -13,10 +13,9 @@ import { Grommet, Footer, Heading, Paragraph } from 'grommet'
 
 import Head from "./header"
 
-import "./layout.css"
-import "./main.css"
-
 import labsLogo from "../images/labs.png"
+
+import "./main.css"
 
 const Layout = ({ children }) => {
   return (
