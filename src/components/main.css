@@ -4,11 +4,11 @@
    Author's custom styles
    ========================================================================== */
 
-/* body { padding-top: 50px; padding-bottom: 20px; } */
 @font-face {
   font-family: 'Roboto';
   src: url("../assets/ttf/roboto-thin.ttf");
 }
+
 @font-face {
   font-family: 'Roboto';
   src: url("../assets/ttf/roboto-bold.ttf");
@@ -29,61 +29,4 @@ li a,h1,h2 {
   font-family: "Roboto";
   text-transform: uppercase;
   font-weight: bold;
-}
-
-nav a {
-  color: #FFFFFF;
-}
-
-.rounded {
-  border-radius:10px;
-}
-
-.centered {
-  text-align:center;
-}
-
-.white {
-  color: white;
-}
-
-.navbar-blue {
-  /* background-color: #5B6AB1; */
-  /* border-color: #424F7F; */
-  background-color: #8218E8;
-  border-color: #B01DED;
-}
-
-.navbar-brand {
-  padding: 10px;
-  font-size: 1.5em;
-}
-
-.navbar-brand img {
-  display:inline;
-  /* height:1.5em; */
-}
-
-.navbar-toggle {
-  border-color: #FFFFFF;
-}
-
-.navbar-toggle .icon-bar {
-  background: #FFFFFF;
-}
-
-.footer {
-  position: absolute;
-  width: 100%;
-  height: 180px;
-  padding: 20px;
-  background-color: #222222;
-}
-
-.inline {
-  display:inline;
-}
-
-.logo {
-  max-width: 200px;
 }
