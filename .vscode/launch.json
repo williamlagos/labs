@@ -5,26 +5,12 @@
     "version": "0.2.0",
     "configurations": [
       {
-        "name": "Gatsby Develop",
-        "type": "node",
+        "type": "firefox",
         "request": "launch",
-        "protocol": "inspector",
-        "program": "${workspaceRoot}/node_modules/gatsby/dist/bin/gatsby",
-        "args": ["develop"],
-        "stopOnEntry": false,
-        "runtimeArgs": ["--nolazy"],
-        "sourceMaps": false
+        "reAttach": true,
+        "name": "Launch on Web",
+        "url": "http://localhost:8000/",
+        "webRoot": "${workspaceFolder}"
       },
-      {
-        "name": "Gatsby Build",
-        "type": "node",
-        "request": "launch",
-        "protocol": "inspector",
-        "program": "${workspaceRoot}/node_modules/gatsby/dist/bin/gatsby",
-        "args": ["build"],
-        "stopOnEntry": false,
-        "runtimeArgs": ["--nolazy"],
-        "sourceMaps": false
-      }
     ]
 }
