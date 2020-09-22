@@ -24,51 +24,52 @@ const IndexPage = () => (
     <Layout>
       <SEO title="Home" />
 
-      <Main>
+      <Main background="#eee">
         <Box margin="large" align="center">
-          <Box height="small" width="small" align="center">
-            <Image alt="Efforia Labs logo" src={labsOutline} />
+          <Box height="small" width="medium" align="center">
+            <Image fit="contain" alt="Efforia Labs logo" src={labsOutline} />
           </Box>
-          <Heading>A próxima inspiração começa por aqui.</Heading>
-          <Paragraph>Labs é um espaço para projetos experimentais na Efforia</Paragraph>
+          <Heading level={2} margin="small">A próxima inspiração começa por aqui.</Heading>
+          <Paragraph fill margin="none">Labs é um espaço para projetos experimentais na Efforia</Paragraph>
         </Box>
       </Main>
 
-      <Box justify="center" direction="row">
-        <Card margin="small" background="light-1">
-          <CardHeader pad="medium">
-            <Box height="medium" width="medium" direction="column" align="center">
-              <Heading>Apollo</Heading>
-              <Image src={rocketImage} alt="Rocket launch" />
-            </Box>
+
+      <Box wrap justify="center" direction="row" margin="large">
+        <Card basis="medium" margin="small" background="light-1">
+          <CardHeader size="medium">
+            <Image fit="contain" src={rocketImage} alt="Rocket launch" />
           </CardHeader>
-          <CardBody pad="medium">Projeto de Landing Page e CMS.</CardBody>
+          <CardBody pad="medium">
+            <Heading level={3} margin="none">Apollo</Heading>
+            <Paragraph>Projeto de Landing Page e CMS.</Paragraph> 
+          </CardBody>
           <CardFooter pad={{horizontal: "small"}} background="light-2">   
             <Button icon={<Favorite color="red" />} hoverIndicator />
             <Button icon={<ShareOption color="plain" />} hoverIndicator />
           </CardFooter>
         </Card>
-        <Card margin="small" background="light-1">
-          <CardHeader pad="medium">
-            <Box height="medium" width="medium" direction="column" align="center">
-              <Heading>Cursos</Heading>
-              <Image src={hexagonLogo} alt="Efforia Labs logo" />
-            </Box>
+        <Card basis="medium" margin="small" background="light-1">
+          <CardHeader size="medium">  
+            <Image fit="contain" src={hexagonLogo} alt="Efforia Labs logo" />
           </CardHeader>
-          <CardBody pad="medium">Cursos de Design e Desenvolvimento.</CardBody>
+          <CardBody pad="medium">
+            <Heading level={3} margin="none">Cursos</Heading>
+            <Paragraph>Cursos de Design e Desenvolvimento.</Paragraph>
+          </CardBody>
           <CardFooter pad={{horizontal: "small"}} background="light-2">   
             <Button icon={<Favorite color="red" />} hoverIndicator />
             <Button icon={<ShareOption color="plain" />} hoverIndicator />
           </CardFooter>
         </Card>
-        <Card margin="small" background="light-1">
-          <CardHeader pad="medium">
-            <Box height="medium" width="medium" direction="column" align="center">
-              <Heading>Dinamo</Heading>
-              <Image src={dinamoImage} alt="Dinamo figure" />
-            </Box>
+        <Card basis="medium" margin="small" background="light-1">
+          <CardHeader size="medium">  
+            <Image fit="contain"src={dinamoImage} alt="Dinamo figure" />
           </CardHeader>
-          <CardBody pad="medium">Game de aventura em formato side-scrolling.</CardBody>
+          <CardBody pad="medium">
+            <Heading level={3} margin="none">Dinamo</Heading>
+            <Paragraph>Game de aventura em formato side-scrolling.</Paragraph>
+          </CardBody>
           <CardFooter pad={{horizontal: "small"}} background="light-2">   
             <Button icon={<Favorite color="red" />} hoverIndicator />
             <Button icon={<ShareOption color="plain" />} hoverIndicator />
