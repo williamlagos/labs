@@ -17,9 +17,17 @@ import labsLogo from "../images/labs.png"
 
 import "./main.css"
 
+const landingTheme = {
+  global: {
+    font: {
+      family: 'Roboto',
+    },
+  },
+};
+
 const Layout = ({ children }) => {
   return (
-    <Grommet>
+    <Grommet theme={landingTheme}>
       <Helmet>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -28,11 +36,10 @@ const Layout = ({ children }) => {
       </Helmet>
       <Head siteTitle="Efforia Labs" />
       {children}
-      <Box pad="large"/>
-      <Footer pad="medium" background="brand">
-        <Heading className="centered white"><div className="hidden-xs inline"> </div>+55 (51) 998 485 888</Heading>
-        <Heading className="centered white" style={{ "fontSize": "1.2em" }}><div className="hidden-xs inline ">E-mail: </div>labs@efforia.io</Heading>
-        <Paragraph className="text-muted centered">Efforia © 2020</Paragraph>
+      <Footer pad="medium" direction="column" justify="center" background="dark-1">
+        <Heading level={2} margin="xxsmall">+55 (51) 998 485 888</Heading>
+        <Heading level={3} margin="xxsmall">labs@efforia.io</Heading>
+        <Paragraph margin="xxsmall">Efforia © 2020</Paragraph>
       </Footer>
     </Grommet>
   )
