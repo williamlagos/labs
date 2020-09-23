@@ -34,7 +34,7 @@ const IndexPage = () => (
         </Box>
       </Main>
 
-      <Box align="center" direction="row">
+      <Box justify="center" direction="row">
         <Card margin="small" background="light-1">
           <CardHeader pad="medium">
             <Box height="medium" width="medium" direction="column" align="center">
