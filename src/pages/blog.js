@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { Box, Heading, Paragraph, Image } from "grommet"
+import { Box, Heading, Paragraph, /* Image */ } from "grommet"
 
 const BlogPage = () => (
     <Layout>
