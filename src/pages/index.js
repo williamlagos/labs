@@ -3,9 +3,9 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { Card, CardHeader, CardBody, CardFooter } from "grommet"
-import { Main, Heading, Paragraph, Box, Button, Image } from "grommet"
-import { Favorite, ShareOption } from "grommet-icons"
+import { Card, CardHeader, CardBody, /* CardFooter */ } from "grommet"
+import { Main, Heading, Paragraph, Box, Image, /* Button */ } from "grommet"
+// import { Favorite, ShareOption } from "grommet-icons"
 
 
 import labsOutline from "../assets/svg/labs_outline.svg"
@@ -37,10 +37,10 @@ const IndexPage = () => (
           <Heading level={3} margin="none">Apollo</Heading>
           <Paragraph>Projeto de Landing Page e CMS.</Paragraph> 
         </CardBody>
-        <CardFooter pad={{horizontal: "small"}} background="light-2">   
+        {/* <CardFooter pad={{horizontal: "small"}} background="light-2">   
           <Button icon={<Favorite color="red" />} hoverIndicator />
           <Button icon={<ShareOption color="plain" />} hoverIndicator />
-        </CardFooter>
+        </CardFooter> */}
       </Card>
       <Card basis="medium" margin="small" background="light-1">
         <CardHeader size="medium">  
@@ -50,10 +50,10 @@ const IndexPage = () => (
           <Heading level={3} margin="none">Cursos</Heading>
           <Paragraph>Cursos de Design e Desenvolvimento.</Paragraph>
         </CardBody>
-        <CardFooter pad={{horizontal: "small"}} background="light-2">   
+        {/* <CardFooter pad={{horizontal: "small"}} background="light-2">   
           <Button icon={<Favorite color="red" />} hoverIndicator />
           <Button icon={<ShareOption color="plain" />} hoverIndicator />
-        </CardFooter>
+        </CardFooter> */}
       </Card>
       <Card basis="medium" margin="small" background="light-1">
         <CardHeader size="medium">  
@@ -63,10 +63,10 @@ const IndexPage = () => (
           <Heading level={3} margin="none">Dinamo</Heading>
           <Paragraph>Game de aventura em formato side-scrolling.</Paragraph>
         </CardBody>
-        <CardFooter pad={{horizontal: "small"}} background="light-2">   
+        {/* <CardFooter pad={{horizontal: "small"}} background="light-2">   
           <Button icon={<Favorite color="red" />} hoverIndicator />
           <Button icon={<ShareOption color="plain" />} hoverIndicator />
-        </CardFooter>
+        </CardFooter> */}
       </Card>
     </Box>
 
