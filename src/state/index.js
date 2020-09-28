@@ -1,7 +1,7 @@
-import { applyMiddleware, createStore } from "redux"
-import { composeWithDevTools } from "redux-devtools-extension"
-import logger from "redux-logger"
-import thunk from "redux-thunk"
+import { applyMiddleware, createStore } from 'redux'
+import { composeWithDevTools } from 'redux-devtools-extension'
+import logger from 'redux-logger'
+import thunk from 'redux-thunk'
 
 
 const reducer = (state, action) => {
@@ -14,7 +14,8 @@ const reducer = (state, action) => {
   return state
 }
 
-const initialState = { count: 0 }
+const prepareInitialState = async () => await fetch('https://technologielabor.herokuapp.com/v1/contents/')
 
-const createAppState = () => createStore(reducer, initialState, composeWithDevTools(applyMiddleware(thunk, logger)))
+const createAppState = () => createStore(reducer, { count: 0, posts: prepareInitialState() }, composeWithDevTools(applyMiddleware(thunk, logger)))
+
 export default createAppState
