@@ -1,8 +1,9 @@
 // import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import { Link } from "gatsby"
-import { Header, Box, Anchor, Image } from "grommet"
+// import { Link } from "gatsby"
+import Link from "./link"
+import { Header, Box, /*Anchor,*/ Image } from "grommet"
 
 import labsLogo from "../assets/svg/labs.svg"
 
@@ -12,8 +13,8 @@ const Head = ({ siteTitle }) => (
       <Link to="/"><Image fit="contain" src={labsLogo} /></Link>
     </Box>
     <Box gap="small" direction="row" pad="small">
-      <Anchor href="/blog" size="small" color="white" label="BLOG" />
-      <Anchor href="/opensource/" size="small" color="white" label="OPEN SOURCE" />
+      <Link to="/blog" size="small" color="white" label="BLOG" />
+      <Link to="/opensource" size="small" color="white" label="OPEN SOURCE" />
     </Box>
   </Header>
 )
