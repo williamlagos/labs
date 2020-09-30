@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import { Box, Heading, Paragraph, /* Image */ } from "grommet"
 
 const BlogPage = () => {
-  const [posts, setPosts] = useState(Array())
+  const [posts, setPosts] = useState([])
 
   useEffect(() => {
     const fetchPosts = async () => setPosts((await (await fetch('https://technologielabor.herokuapp.com/v1/contents/')).json()).objects)
