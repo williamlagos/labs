@@ -14,7 +14,7 @@ const BlogPage = () => {
   })
   return (
     <Layout>
-      <SEO />
+      <SEO title="Blog" />
       <Box align="center" pad="medium">
         <Heading>Blog da Efforia Labs</Heading>
         <Paragraph fill>
@@ -23,8 +23,8 @@ const BlogPage = () => {
         {
           posts.map((post) => {
             return (
-              <Box align="center">
-                <Heading level={2} key={post.id}> {post.name} </Heading>
+              <Box key={post.id} align="center">
+                <Heading level={2} > {post.name} </Heading>
                 <Heading level={3}> Publicado em {post.date} </Heading>
                 <Heading level={4}> Escrito por {post.user.username} </Heading>
                 <Paragraph fill> {post.content} </Paragraph>
