@@ -14,8 +14,13 @@ const reducer = (state, action) => {
   return state
 }
 
-const prepareInitialState = async () => await fetch('https://technologielabor.herokuapp.com/v1/contents/')
+const prepareInitialState = async () => (
+  { 
+    count: 0, 
+    posts: [] 
+  } 
+)
 
-const createAppState = () => createStore(reducer, { count: 0, posts: prepareInitialState() }, composeWithDevTools(applyMiddleware(thunk, logger)))
+const createAppState = () => createStore(reducer, prepareInitialState(), composeWithDevTools(applyMiddleware(thunk, logger)))
 
 export default createAppState
