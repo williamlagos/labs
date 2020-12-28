@@ -33,12 +33,12 @@ const Layout = ({ children }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="shortcut icon" href={labsLogo} />
       </Helmet>
-      <Head siteTitle="Efforia Labs" />
+      <Head siteTitle="Labs" />
       {children}
       <Footer pad="medium" direction="column" justify="center" background="dark-1">
-        <Heading level={2} margin="xxsmall">+55 (51) 998 485 888</Heading>
-        <Heading level={3} margin="xxsmall">labs@efforia.io</Heading>
-        <Paragraph margin="xxsmall">Efforia © 2020</Paragraph>
+        {/* <Heading level={2} margin="xxsmall">+55 (51) 998 485 888</Heading> */}
+        {/* <Heading level={3} margin="xxsmall">labs@efforia.io</Heading> */}
+        <Paragraph margin="xxsmall">Labs © 2020</Paragraph>
       </Footer>
     </Grommet>
   )
