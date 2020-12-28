@@ -13,7 +13,7 @@ const Head = ({ siteTitle }) => (
       <Link to="/"><Image fit="contain" src={labsLogo} /></Link>
     </Box>
     <Box gap="small" direction="row" pad="small">
-      <Link to="/blog" size="small" color="white" label="BLOG" />
+      {/* <Link to="/blog" size="small" color="white" label="BLOG" /> */}
       <Link to="/opensource" size="small" color="white" label="OPEN SOURCE" />
     </Box>
   </Header>

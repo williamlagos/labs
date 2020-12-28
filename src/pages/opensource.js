@@ -10,17 +10,17 @@ const OpensourcePage = () => (
     <Layout>
       <SEO />
       <Box align="center" pad="medium">
-        <Heading>Iniciativa Open Source da Efforia</Heading>
+        <Heading>Iniciativa Open Source</Heading>
         <Paragraph fill>
           Nós acreditamos que para qualquer atividade é melhor executada quando coletivamente. Por isso 
-          a Efforia é incentivadora e contribuidora de projetos de Software Livre, mantendo um perfil 
+          somos incentivadores e contribuidores de projetos de Software Livre, mantendo um perfil 
           próprio no GitHub e divulgando os projetos open source existentes para seus membros. A 
-          iniciativa torna-se completa com a existência da Efforia Labs, promovendo hackathons e 
+          iniciativa torna-se completa com a existência de promoção de hackathons e 
           dojos de forma a fomentar o código aberto.
         </Paragraph>
         <Box pad="medium" size="large" align="center" direction="row" gap="small" onClick={() => window.location = 'https://github.com/efforia'}>
           <Github size="large" color="dark-1" />
-          <Heading level={2} margin="none">GitHub da Efforia</Heading>
+          <Heading level={2} margin="none">GitHub</Heading>
         </Box>
       </Box>
     </Layout>

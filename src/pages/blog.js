@@ -16,7 +16,7 @@ const BlogPage = () => {
     <Layout>
       <SEO title="Blog" />
       <Box align="center" pad="medium">
-        <Heading>Blog da Efforia Labs</Heading>
+        <Heading>Blog do Labs</Heading>
         <Paragraph fill>
           Aqui surgirão conteúdos de todas as utilidades no campo de programação e design.
         </Paragraph>

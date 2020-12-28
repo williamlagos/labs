@@ -20,10 +20,10 @@ const IndexPage = () => (
     <Main background="#eee">
       <Box margin="large" align="center">
         <Box height="small" width="medium" align="center">
-          <Image fit="contain" alt="Efforia Labs logo" src={labsOutline} />
+          <Image fit="contain" alt="Labs logo" src={labsOutline} />
         </Box>
         <Heading level={2} margin="small">A próxima inspiração começa por aqui.</Heading>
-        <Paragraph fill margin="none">Labs é um espaço para projetos experimentais na Efforia</Paragraph>
+        <Paragraph fill margin="none">O Labs é um espaço para projetos experimentais</Paragraph>
       </Box>
     </Main>
 
@@ -44,7 +44,7 @@ const IndexPage = () => (
       </Card>
       <Card basis="medium" margin="small" background="light-1">
         <CardHeader size="medium">  
-          <Image fit="contain" src={hexagonLogo} alt="Efforia Labs logo" />
+          <Image fit="contain" src={hexagonLogo} alt="Labs logo" />
         </CardHeader>
         <CardBody pad="medium">
           <Heading level={3} margin="none">Cursos</Heading>
