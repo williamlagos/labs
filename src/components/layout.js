@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
-import { Grommet, Footer, Heading, Paragraph } from 'grommet'
+import { Grommet, Footer, /*Heading,*/ Paragraph } from 'grommet'
 
 import Head from "./header"
 
