@@ -36,9 +36,9 @@ const Layout = ({ children }) => {
       <Head siteTitle="Labs" />
       {children}
       <Footer pad="medium" direction="column" justify="center" background="dark-1">
-        {/* <Heading level={2} margin="xxsmall">+55 (51) 998 485 888</Heading> */}
-        {/* <Heading level={3} margin="xxsmall">labs@efforia.io</Heading> */}
-        <Paragraph margin="xxsmall">Labs © 2020</Paragraph>
+        <Heading level={2} margin="xxsmall">+351 913 077 480</Heading>
+        <Heading level={3} margin="xxsmall">william.lagos@icloud.com</Heading>
+        <Paragraph margin="xxsmall">Labs © 2021</Paragraph>
       </Footer>
     </Grommet>
   )
