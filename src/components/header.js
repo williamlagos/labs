@@ -14,7 +14,7 @@ const Head = ({ siteTitle }) => (
     </Box>
     <Box gap="small" direction="row" pad="small">
       {/* <Link to="/blog" size="small" color="white" label="BLOG" /> */}
-      <Link to="/opensource" size="small" color="white" label="OPEN SOURCE" />
+      {/* <Link to="/opensource" size="small" color="white" label="OPEN SOURCE" /> */}
     </Box>
   </Header>
 )
