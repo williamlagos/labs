@@ -10,11 +10,10 @@ import labsLogo from "../assets/svg/labs.svg"
 const Head = ({ siteTitle }) => (
   <Header background="brand" pad={{ "horizontal": "xsmall" }}>
     <Box pad="small" height="xxsmall" width="xxsmall">
-      <Link to="/"><Image fit="contain" src={labsLogo} /></Link>
+      <Link to="./"><Image fit="contain" src={labsLogo} /></Link>
     </Box>
     <Box gap="small" direction="row" pad="small">
-      {/* <Link to="/blog" size="small" color="white" label="BLOG" /> */}
-      {/* <Link to="/opensource" size="small" color="white" label="OPEN SOURCE" /> */}
+      <Link to="./blog" size="small" color="white" label="BLOG" />
     </Box>
   </Header>
 )
