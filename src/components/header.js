@@ -1,7 +1,5 @@
-// import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-// import { Link } from "gatsby"
 import Link from "./link"
 import { Header, Box, /*Anchor,*/ Image } from "grommet"
 
