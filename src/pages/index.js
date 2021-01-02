@@ -30,7 +30,7 @@ const IndexPage = () => (
 
 
     <Box wrap justify="center" direction="row" margin="large">
-      <Card basis="medium" margin="small" background="light-1">
+      <Card basis="small" margin="small" background="light-1">
         <CardHeader size="medium">
           <Image fit="contain" src={rocketImage} alt="Rocket launch" />
         </CardHeader>
@@ -43,7 +43,7 @@ const IndexPage = () => (
           <Button icon={<ShareOption color="plain" />} hoverIndicator />
         </CardFooter>
       </Card>
-      <Card basis="medium" margin="small" background="light-1">
+      <Card basis="small" margin="small" background="light-1">
         <CardHeader size="medium">  
           <Image fit="contain" src={hexagonLogo} alt="Labs logo" />
         </CardHeader>
@@ -56,7 +56,7 @@ const IndexPage = () => (
           <Button icon={<ShareOption color="plain" />} hoverIndicator />
         </CardFooter>
       </Card>
-      <Card basis="medium" margin="small" background="light-1">
+      <Card basis="small" margin="small" background="light-1">
         <CardHeader size="medium">  
           <Image fit="contain"src={dinamoImage} alt="Dinamo figure" />
         </CardHeader>
@@ -69,13 +69,26 @@ const IndexPage = () => (
           <Button icon={<ShareOption color="plain" />} hoverIndicator />
         </CardFooter>
       </Card>
-      <Card basis="medium" margin="small" background="light-1">
+      <Card basis="small" margin="small" background="light-1">
         <CardHeader size="medium">  
           <Image fit="contain" src={githubImage} alt="Pomodorino Logo" />
         </CardHeader>
         <CardBody pad="medium">
           <Heading level={3} margin="none">Pomodorino</Heading>
           <Paragraph>Application developed for Android, iOS and Web</Paragraph>
+        </CardBody>
+        <CardFooter pad={{horizontal: "small"}} background="light-2">   
+          <Button icon={<Favorite color="red" />} hoverIndicator />
+          <Button icon={<ShareOption color="plain" />} hoverIndicator />
+        </CardFooter>
+      </Card>
+      <Card basis="small" margin="small" background="light-1">
+        <CardHeader size="medium">  
+          <Image fit="contain" src={githubImage} alt="Weather Station Logo" />
+        </CardHeader>
+        <CardBody pad="medium">
+          <Heading level={3} margin="none">Weather Station</Heading>
+          <Paragraph>Weather Station Platform developed with Arduino and for Android, iOS and Web</Paragraph>
         </CardBody>
         <CardFooter pad={{horizontal: "small"}} background="light-2">   
           <Button icon={<Favorite color="red" />} hoverIndicator />
