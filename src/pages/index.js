@@ -22,8 +22,8 @@ const IndexPage = () => (
         <Box height="small" width="medium" align="center">
           <Image fit="contain" alt="Labs logo" src={labsOutline} />
         </Box>
-        <Heading level={2} margin="small">A próxima inspiração começa por aqui.</Heading>
-        <Paragraph fill margin="none">O Labs é um espaço para projetos experimentais</Paragraph>
+        <Heading level={2} margin="small">The next inspiration starts here.</Heading>
+        <Paragraph fill margin="none">The Labs is a space for experimental projects</Paragraph>
       </Box>
     </Main>
 
@@ -35,7 +35,7 @@ const IndexPage = () => (
         </CardHeader>
         <CardBody pad="medium">
           <Heading level={3} margin="none">Apollo</Heading>
-          <Paragraph>Projeto de Landing Page e CMS.</Paragraph> 
+          <Paragraph>Landing Page and CMS Project.</Paragraph> 
         </CardBody>
         <CardFooter pad={{horizontal: "small"}} background="light-2">   
           <Button icon={<Favorite color="red" />} hoverIndicator />
@@ -47,8 +47,8 @@ const IndexPage = () => (
           <Image fit="contain" src={hexagonLogo} alt="Labs logo" />
         </CardHeader>
         <CardBody pad="medium">
-          <Heading level={3} margin="none">Cursos</Heading>
-          <Paragraph>Cursos de Design e Desenvolvimento.</Paragraph>
+          <Heading level={3} margin="none">Learning</Heading>
+          <Paragraph>Design and Development Courses.</Paragraph>
         </CardBody>
         <CardFooter pad={{horizontal: "small"}} background="light-2">   
           <Button icon={<Favorite color="red" />} hoverIndicator />
@@ -61,7 +61,7 @@ const IndexPage = () => (
         </CardHeader>
         <CardBody pad="medium">
           <Heading level={3} margin="none">Dinamo</Heading>
-          <Paragraph>Game de aventura em formato side-scrolling.</Paragraph>
+          <Paragraph>Adventure Game in side-scrolling.</Paragraph>
         </CardBody>
         <CardFooter pad={{horizontal: "small"}} background="light-2">   
           <Button icon={<Favorite color="red" />} hoverIndicator />

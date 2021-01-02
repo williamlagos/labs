@@ -8,8 +8,8 @@ import { Heading, Paragraph } from "grommet"
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Não encontrado" />
-    <Heading>Não encontrado</Heading>
-    <Paragraph>Você chegou a uma rota que não existe.</Paragraph>
+    <Heading>Not Found</Heading>
+    <Paragraph>You came to a route that doesn't have a page.</Paragraph>
   </Layout>
 )
 

@@ -16,17 +16,17 @@ const BlogPage = () => {
     <Layout>
       <SEO title="Blog" />
       <Box align="center" pad="medium">
-        <Heading>Blog do Labs</Heading>
+        <Heading>Labs Blog</Heading>
         <Paragraph fill>
-          Aqui surgirão conteúdos de todas as utilidades no campo de programação e design.
+          Here will be content about programming and design.
         </Paragraph>
         {
           posts.map((post) => {
             return (
               <Box key={post.id} align="center">
                 <Heading level={2} > {post.name} </Heading>
-                <Heading level={3}> Publicado em {post.date} </Heading>
-                <Heading level={4}> Escrito por {post.user.username} </Heading>
+                <Heading level={3}> Published in {post.date} </Heading>
+                <Heading level={4}> Written by {post.user.username} </Heading>
                 <Paragraph fill> {post.content} </Paragraph>
               </Box>
             )
