@@ -12,6 +12,7 @@ import labsOutline from "../assets/svg/labs_outline.svg"
 import rocketImage from "../assets/svg/rocket.svg"
 import hexagonLogo from "../assets/svg/hubpro.svg"
 import dinamoImage from "../assets/svg/new.svg"
+import githubImage from "../assets/svg/github.svg"
 
 const IndexPage = () => (
   <Layout>
@@ -62,6 +63,19 @@ const IndexPage = () => (
         <CardBody pad="medium">
           <Heading level={3} margin="none">Dinamo</Heading>
           <Paragraph>Adventure Game in side-scrolling.</Paragraph>
+        </CardBody>
+        <CardFooter pad={{horizontal: "small"}} background="light-2">   
+          <Button icon={<Favorite color="red" />} hoverIndicator />
+          <Button icon={<ShareOption color="plain" />} hoverIndicator />
+        </CardFooter>
+      </Card>
+      <Card basis="medium" margin="small" background="light-1">
+        <CardHeader size="medium">  
+          <Image fit="contain" src={githubImage} alt="Pomodorino Logo" />
+        </CardHeader>
+        <CardBody pad="medium">
+          <Heading level={3} margin="none">Pomodorino</Heading>
+          <Paragraph>Application developed for Android, iOS and Web</Paragraph>
         </CardBody>
         <CardFooter pad={{horizontal: "small"}} background="light-2">   
           <Button icon={<Favorite color="red" />} hoverIndicator />
