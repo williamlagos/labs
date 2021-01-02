@@ -30,7 +30,7 @@ const IndexPage = () => (
 
 
     <Box wrap justify="center" direction="row" margin="large">
-      <Card basis="small" margin="small" background="light-1">
+      <Card basis="medium" margin="small" background="light-1">
         <CardHeader size="medium">
           <Image fit="contain" src={rocketImage} alt="Rocket launch" />
         </CardHeader>
@@ -43,7 +43,7 @@ const IndexPage = () => (
           <Button icon={<ShareOption color="plain" />} hoverIndicator />
         </CardFooter>
       </Card>
-      <Card basis="small" margin="small" background="light-1">
+      <Card basis="medium" margin="small" background="light-1">
         <CardHeader size="medium">  
           <Image fit="contain" src={hexagonLogo} alt="Labs logo" />
         </CardHeader>
@@ -56,7 +56,7 @@ const IndexPage = () => (
           <Button icon={<ShareOption color="plain" />} hoverIndicator />
         </CardFooter>
       </Card>
-      <Card basis="small" margin="small" background="light-1">
+      <Card basis="medium" margin="small" background="light-1">
         <CardHeader size="medium">  
           <Image fit="contain"src={dinamoImage} alt="Dinamo figure" />
         </CardHeader>
@@ -69,7 +69,7 @@ const IndexPage = () => (
           <Button icon={<ShareOption color="plain" />} hoverIndicator />
         </CardFooter>
       </Card>
-      <Card basis="small" margin="small" background="light-1">
+      <Card basis="medium" margin="small" background="light-1">
         <CardHeader size="medium">  
           <Image fit="contain" src={githubImage} alt="Pomodorino Logo" />
         </CardHeader>
@@ -82,7 +82,7 @@ const IndexPage = () => (
           <Button icon={<ShareOption color="plain" />} hoverIndicator />
         </CardFooter>
       </Card>
-      <Card basis="small" margin="small" background="light-1">
+      {/*<Card basis="medium" margin="small" background="light-1">
         <CardHeader size="medium">  
           <Image fit="contain" src={githubImage} alt="Weather Station Logo" />
         </CardHeader>
@@ -94,7 +94,7 @@ const IndexPage = () => (
           <Button icon={<Favorite color="red" />} hoverIndicator />
           <Button icon={<ShareOption color="plain" />} hoverIndicator />
         </CardFooter>
-      </Card>
+      </Card>*/}
     </Box>
 
   </Layout>
