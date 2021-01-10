@@ -1,2 +1,2 @@
 # labs
-Efforia Labs official website
+Labs official website
